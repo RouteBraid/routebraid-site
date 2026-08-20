@@ -1,0 +1,174 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="How RouteBraid handles trip, account, map, sync, profile, and subscription information.">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Privacy Policy · RouteBraid">
+  <meta property="og:description" content="How RouteBraid handles trip, account, map, sync, profile, and subscription information.">
+  <title>Privacy Policy · RouteBraid</title>
+  <link rel="icon" href="../assets/app-icon.png">
+  <link rel="stylesheet" href="../assets/styles.css">
+</head>
+<body class="legal-page">
+  <a class="skip-link" href="#document">Skip to document</a>
+  <header class="site-header">
+    <a class="brand" href="../" aria-label="RouteBraid home">
+      <img src="../assets/app-icon.png" alt="" width="44" height="44">
+      <span>RouteBraid</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../">Product</a>
+      <a href="../privacy/" aria-current="page">Privacy</a>
+      <a href="../terms/">Terms</a>
+      <a class="nav-cta" href="https://play.google.com/store/apps/details?id=com.routebraid.app" rel="noopener">Google Play</a>
+    </nav>
+  </header>
+  <main class="legal-main shell">
+    <header class="legal-intro">
+      <p class="eyebrow">RouteBraid legal &amp; privacy</p>
+      <h1>Privacy Policy</h1>
+      <p>How RouteBraid handles trip, account, map, sync, profile, and subscription information. This page is provided as a direct, publicly accessible policy URL.</p>
+    </header>
+    <div class="legal-layout">
+      <nav class="legal-side" aria-label="Legal documents">
+        <a href="../privacy/" aria-current="page">Privacy Policy</a>
+<a href="../terms/">Terms of Use</a>
+<a href="../account-deletion/">Account Deletion</a>
+<a href="../community/">Community Rules</a>
+      </nav>
+      <article class="legal-document" id="document">
+        <h1>RouteBraid Privacy Policy</h1>
+<ul>
+<li>Effective date: <strong>August 20, 2026</strong></li>
+<li>Last updated: <strong>August 20, 2026</strong></li>
+<li>Developer and data controller: <strong>RouteBraid</strong></li>
+<li>Privacy contact: <strong>RouteBraid@gmail.com</strong></li>
+<li>Location: <strong>Lebanon, New Hampshire, United States</strong></li>
+</ul>
+<h2>1. Scope and summary</h2>
+<p>This Privacy Policy explains how RouteBraid handles personal information when you use the RouteBraid application and RouteBraid-operated account, synchronization, profile, collaboration, support, and subscription-access features (the &quot;Service&quot;). It does not govern a third-party app, website, map provider, identity provider, app store, or payment service acting under its own privacy policy.</p>
+<p>RouteBraid is local-first. Core itinerary planning and local JSON backup can be used without an account. Local trip data stays on your device unless you deliberately use a network feature such as map tiles, place search, routing, Google Maps link import, an external map handoff, cloud synchronization, collaboration, profile-photo upload, support, or subscription access.</p>
+<p>RouteBraid does not sell personal information, does not share it for cross-context behavioral advertising, does not display third-party ads, and does not use personal information to train an artificial-intelligence model. RouteBraid currently does not include a general-purpose advertising, analytics, or crash-reporting SDK.</p>
+<h2>2. Information you provide or create</h2>
+<ul>
+<li><strong>Trips and itinerary content:</strong> trip names, destinations, dates, time zones, lodging, saved places, addresses, coordinates, order, visit duration, reservations, notes, manual travel details, and planning preferences.</li>
+<li><strong>Account and identity information:</strong> a private RouteBraid account identifier and information returned by the sign-in method you choose, which can include email address, display name, profile image URL, and provider metadata. RouteBraid does not receive your Google or Apple password.</li>
+<li><strong>Profile information:</strong> your chosen display name and optional custom profile image. When you choose or take an image, RouteBraid processes it on your device, lets you select a crop, re-encodes the approved square as a metadata-free JPEG, and uploads only that result. The original full-size image is not uploaded by RouteBraid.</li>
+<li><strong>Synchronization and collaboration information:</strong> the trip data you choose to synchronize or share; sync revisions and timestamps; invitation codes in hashed or transient form; trip roles and memberships; acceptance of legal-document versions; collaboration activity; blocks; and reports submitted through safety controls.</li>
+<li><strong>Support and privacy communications:</strong> messages, contact details, diagnostic details you choose to provide, and records needed to respond, investigate a problem, or document a request.</li>
+<li><strong>Backup, import, export, and clipboard content:</strong> RouteBraid accesses pasted text or a shared link only when you initiate an import, restore, or invitation action. When you choose Copy or Share, RouteBraid sends the selected itinerary, link, invitation code, or backup to the operating-system clipboard or share interface. Clipboard and share recipients are controlled by your device and selected apps, not RouteBraid.</li>
+</ul>
+<p>Please avoid entering passport numbers, payment-card numbers, authentication secrets, health information, another person's private home location, or other sensitive information that is unnecessary for travel planning.</p>
+<h2>3. Location, camera, photos, maps, search, and routing</h2>
+<ul>
+<li><strong>Device location:</strong> RouteBraid asks for foreground location permission only after you use the map's location control. It reads a current high-accuracy position and, while that map remains open, may receive foreground updates to move the on-screen marker. The reading is held in app memory for that map session. Merely centering the map does not upload the GPS reading to RouteBraid's Supabase backend. If you later save, synchronize, share, route from, or open a map around that position, coordinates or map-area information can be sent as described below.</li>
+<li><strong>Map tiles:</strong> displaying the map requests visible tile coordinates from OpenStreetMap Foundation infrastructure. The provider can receive the requested tile area and standard network information such as IP address, device or browser information, user agent, and request time.</li>
+<li><strong>Place search:</strong> when you press Search, RouteBraid sends the search text and any city context to the OpenStreetMap Foundation's public Nominatim service. Do not put personal or confidential information in a search query.</li>
+<li><strong>Route and matrix requests:</strong> for supported walking or driving calculations, RouteBraid can send itinerary coordinates and the selected travel mode to the FOSSGIS routing service at routing.openstreetmap.de. FOSSGIS states that route requests are stored in server logs. RouteBraid can fall back to an on-device straight-line estimate if routing is unavailable.</li>
+<li><strong>Google Maps link import:</strong> when you ask RouteBraid to resolve a shared Google Maps link or list, the link, list identifier, and ordinary connection data may be sent directly to Google. RouteBraid extracts place information exposed by the link; it does not access your private Google Maps account or saved lists unless the shared link itself makes the requested information available.</li>
+<li><strong>External map handoff:</strong> when you choose Google Maps or Apple Maps, RouteBraid opens a provider URL containing the relevant labels, places, coordinates, route points, and travel mode. The selected provider then handles that information under its own policy.</li>
+<li><strong>Camera and photo library:</strong> camera access is requested only when you choose to take a profile photo or scan a trip-invitation QR code. Photo-library access is used when you choose an existing profile photo. QR image frames are processed for scanning; the invitation code is then handled like a pasted code. RouteBraid does not use the camera or photo library for advertising or background monitoring.</li>
+</ul>
+<p>You can deny or revoke location, camera, or photo access in device settings. The associated optional feature may stop working, but core manual planning remains available.</p>
+<h2>4. Subscription and purchase information</h2>
+<p>If RevenueCat or a supported app store is configured, RouteBraid processes a private RouteBraid account identifier together with subscription product identifiers, entitlement status, purchase and restore status, store, environment, renewal state, and expiration information needed to provide Pro access. RevenueCat and the applicable store process purchase receipts and related transaction data.</p>
+<p>Google Play or Apple handles your payment method and full payment-card details; RouteBraid does not receive those card details. Store and RevenueCat records can persist under their legal, tax, fraud-prevention, and transaction-retention obligations. Deleting your RouteBraid cloud account does not cancel a store subscription.</p>
+<h2>5. Technical and network information</h2>
+<p>When you use an online feature, RouteBraid and its providers can automatically process IP address, request time, endpoint, response status, app or SDK version, device and operating-system type, user agent, authentication and session metadata, and limited security or rate-limit events. Test builds can enable more detailed SDK logs on the device. This information is used for authentication, delivery, reliability, debugging, abuse prevention, security, and legal compliance, not third-party advertising.</p>
+<p>RouteBraid does not intentionally collect contacts, call or SMS history, microphone recordings, background location, advertising identifiers, or browsing history outside links and provider pages you deliberately open through the Service.</p>
+<h2>6. How information is used</h2>
+<p>RouteBraid uses information to:</p>
+<ul>
+<li>create and maintain local itineraries and requested backups, imports, exports, maps, routes, and estimates;</li>
+<li>authenticate accounts and provide profiles, manual synchronization, collaboration, and account deletion;</li>
+<li>identify the correct account for Pro entitlement checks, purchases, and restoration;</li>
+<li>display shared-trip information to authorized members and maintain invitation, role, block, report, revision, conflict, and activity controls;</li>
+<li>respond to support, privacy, safety, security, and legal requests;</li>
+<li>prevent fraud, abuse, unauthorized access, excessive provider use, and violations of the Terms or Community Rules;</li>
+<li>operate, troubleshoot, secure, and maintain the Service; and</li>
+<li>comply with law, enforce agreements, and protect users, RouteBraid, and others.</li>
+</ul>
+<p>RouteBraid will not use personal information for a materially unrelated purpose without appropriate notice and, where required, consent.</p>
+<h2>7. Legal bases where applicable</h2>
+<p>Depending on where you live and the feature involved, RouteBraid relies on:</p>
+<ul>
+<li><strong>performance of a contract</strong> to provide the Service you request, including accounts, synchronization, collaboration, and subscription access;</li>
+<li><strong>consent</strong> for optional device permissions and where law requires consent for a particular processing activity;</li>
+<li><strong>legitimate interests</strong> in providing and securing the Service, responding to users, preventing abuse, and maintaining reliable operations, balanced against your rights; and</li>
+<li><strong>legal obligations and protection of rights</strong> for compliance, valid legal requests, disputes, safety, fraud prevention, and enforcement.</li>
+</ul>
+<p>Where processing relies on consent, you may withdraw that consent prospectively. Withdrawal does not make earlier lawful processing unlawful and may prevent the optional feature from working.</p>
+<h2>8. When information leaves your device</h2>
+<p>Local trip content leaves your device only when you initiate or enable a feature that requires it. Depending on that action, information may be disclosed to:</p>
+<ul>
+<li><strong>Supabase:</strong> authentication, private database records, row-level access controls, cloud synchronization, private profile-photo storage, collaboration, and account deletion;</li>
+<li><strong>Google:</strong> Google sign-in if chosen, Google Play billing on Android, Google Maps link resolution, and Google Maps handoff;</li>
+<li><strong>Apple:</strong> Apple sign-in if offered and chosen, App Store billing on Apple platforms, and Apple Maps handoff;</li>
+<li><strong>RevenueCat:</strong> subscription offerings, receipts, customer identifiers, purchase status, and Pro entitlement synchronization;</li>
+<li><strong>OpenStreetMap Foundation:</strong> visible map-tile requests and user-initiated Nominatim search queries;</li>
+<li><strong>FOSSGIS:</strong> coordinates and travel mode for user-requested route and route-matrix calculations;</li>
+<li><strong>collaborators you authorize:</strong> profile display name and shared-trip content appropriate to the invitation and role;</li>
+<li><strong>apps or people you choose:</strong> content sent through copy, share, export, backup, invitation, or external-map controls;</li>
+<li><strong>professional advisers, authorities, or other parties:</strong> when reasonably necessary to comply with law, respond to valid process, protect safety and rights, investigate abuse, or establish or defend legal claims; and</li>
+<li><strong>a successor organization:</strong> in a merger, acquisition, financing, reorganization, or transfer of the Service, subject to this Policy and applicable notice or consent requirements.</li>
+</ul>
+<p>RouteBraid selects service providers for limited operational purposes and expects processors acting on RouteBraid's instructions to use appropriate confidentiality, security, and data-protection safeguards. Google, Apple, the OpenStreetMap Foundation, FOSSGIS, and other services can also act as independent controllers under their own terms and policies. RouteBraid does not control their independent processing.</p>
+<h2>9. International processing</h2>
+<p>RouteBraid operates from the United States. Service providers and their infrastructure can process information in the United States, Canada, the United Kingdom, the European Economic Area, Singapore, or other countries where they or their subprocessors operate. Those countries may have different privacy laws.</p>
+<p>Where required, RouteBraid will rely on an approved transfer mechanism or another lawful basis for an international transfer. You may contact RouteBraid for available information about safeguards relevant to your request.</p>
+<h2>10. Sharing within a trip</h2>
+<p>Trip information is shared only after an owner creates an invitation and a recipient deliberately previews and accepts it. The preview is designed to disclose only limited trip and owner information before acceptance. Once joined, a member can receive the shared itinerary and collaboration activity permitted by the member's role.</p>
+<p>Members can leave and owners can remove members. Blocking prevents specified future collaboration actions where implemented. Removal or deletion cannot erase copies another user already exported, copied, screenshotted, or retained outside RouteBraid. Contact RouteBraid to report misuse.</p>
+<h2>11. Retention</h2>
+<p>RouteBraid retains information only as long as reasonably needed for the purposes described above, subject to these general rules:</p>
+<ul>
+<li><strong>Local data</strong> remains on your device until you delete it, clear app storage, restore over it, or uninstall the app. Copies you place in files, messages, another app, or the system clipboard are controlled by those destinations and their retention settings.</li>
+<li><strong>Active cloud account, profile, sync, and collaboration data</strong> remains until you delete or replace it, leave or end the applicable collaboration, or delete the cloud account, subject to feature-specific history and safety controls.</li>
+<li><strong>Deleted cloud information</strong> is removed from active RouteBraid-controlled records through the deletion process. Limited copies can remain temporarily in encrypted backups, provider logs, security records, or transaction systems until they age out under provider schedules.</li>
+<li><strong>Subscription and transaction information</strong> is retained by RevenueCat and the app store according to their transaction, tax, accounting, security, and legal requirements. RouteBraid can retain limited entitlement records as needed to provide access and resolve purchase disputes.</li>
+<li><strong>Support, safety, fraud, and legal records</strong> can be retained as reasonably necessary to respond, prevent repeat abuse, comply with law, establish or defend claims, and document the outcome. RouteBraid will delete or de-identify them when no longer needed.</li>
+</ul>
+<p>RouteBraid may retain de-identified information that can no longer reasonably be linked to you.</p>
+<h2>12. Your controls and privacy rights</h2>
+<p>Available controls include:</p>
+<ul>
+<li>edit or delete local trips and restore or export local backup data;</li>
+<li>edit the RouteBraid display name and replace or remove a custom profile photo;</li>
+<li>choose whether and when to synchronize, collaborate, search, route, import, copy, share, or use device location;</li>
+<li>revoke app permissions in device settings;</li>
+<li>leave a shared trip, remove members as an owner, and use available block or report controls;</li>
+<li>sign out without deleting local trips; and</li>
+<li>delete the cloud account in <strong>Settings &gt; Cloud Account &gt; Delete Account</strong>. This removes the active account and associated RouteBraid cloud data but leaves local trips on the device and does not cancel a Google Play or App Store subscription.</li>
+</ul>
+<p>You can also email <strong>RouteBraid@gmail.com</strong> to request access, correction, deletion, restriction, portability, objection, or other rights available under the law where you live. RouteBraid may need to verify your identity and clarify the scope before fulfilling a request. Some information may be retained where law permits or requires it. If RouteBraid denies a request, you may email the same address with the subject <strong>Privacy Appeal</strong> and explain why you believe the decision should be reconsidered. You may also complain to the privacy or data-protection authority where you live.</p>
+<p>Disconnecting Google or Apple at the provider does not necessarily delete the RouteBraid cloud account. Uninstalling the app does not cancel a subscription. Manage billing through the applicable store.</p>
+<h2>13. Security</h2>
+<p>RouteBraid uses safeguards appropriate to the type of information handled, including encrypted network transport, authenticated sessions, private storage paths, row-level database authorization, narrow server functions, data minimization, local image re-encoding, request limits, and account-deletion controls. Access to a shared trip is role-based and tied to authenticated accounts.</p>
+<p>No app, device, network, or storage system is perfectly secure. Keep your device and sign-in account protected, install updates, review collaborators, and do not place unnecessary secrets in a trip. Notify <strong>RouteBraid@gmail.com</strong> if you suspect unauthorized access or a security issue.</p>
+<h2>14. Children</h2>
+<p>RouteBraid is not directed to children under 13, and RouteBraid does not knowingly collect personal information online from a child under 13. If you believe a child under 13 has provided personal information, contact <strong>RouteBraid@gmail.com</strong> so RouteBraid can investigate and delete it as appropriate. Users between 13 and the age of legal majority must have permission from a parent or legal guardian.</p>
+<h2>15. United States state privacy disclosures</h2>
+<p>RouteBraid does not sell personal information, share it for cross-context behavioral advertising, or use sensitive personal information to infer characteristics about you. RouteBraid does not offer a financial incentive in exchange for personal information. These practices mean an opt-out of sale or targeted-ad sharing is not currently necessary; if they change, RouteBraid will update this Policy and provide required choices before the change applies.</p>
+<p>Residents of a state with an applicable privacy law may have rights to confirm processing, access, correct, delete, or obtain a portable copy of personal information and to appeal certain decisions, subject to legal scope, exceptions, and verification. Use the contact and appeal process in Section 12.</p>
+<h2>16. Changes to this Policy</h2>
+<p>RouteBraid may update this Policy to reflect feature, provider, security, legal, or business changes. The document will show a new effective date. Material changes may be highlighted in-app and may require acknowledgement before account or collaboration features can be used. Where required, RouteBraid will request consent before applying a materially new use to previously collected information.</p>
+<h2>17. Contact</h2>
+<p>Questions, requests, complaints, and privacy appeals may be sent to <strong>RouteBraid@gmail.com</strong>. Mail location: <strong>RouteBraid, Lebanon, New Hampshire, United States</strong>.</p>
+      </article>
+    </div>
+  </main>
+  <footer class="site-footer">
+    <div class="shell footer-grid">
+      <div><strong>RouteBraid</strong><p>Explore. Connect. Discover.</p></div>
+      <nav aria-label="Legal navigation"><a href="../privacy/" aria-current="page">Privacy Policy</a>
+<a href="../terms/">Terms of Use</a>
+<a href="../account-deletion/">Account Deletion</a>
+<a href="../community/">Community Rules</a></nav>
+      <p>© 2026 RouteBraid<br>Lebanon, New Hampshire, United States<br><a href="mailto:RouteBraid@gmail.com">RouteBraid@gmail.com</a></p>
+    </div>
+  </footer>
+</body>
+</html>
