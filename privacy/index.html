@@ -42,7 +42,7 @@
         <h1>RouteBraid Privacy Policy</h1>
 <ul>
 <li>Effective date: <strong>August 20, 2026</strong></li>
-<li>Last updated: <strong>August 20, 2026</strong></li>
+<li>Last updated: <strong>October 21, 2026</strong></li>
 <li>Developer and data controller: <strong>RouteBraid</strong></li>
 <li>Privacy contact: <strong>RouteBraid@gmail.com</strong></li>
 <li>Location: <strong>Lebanon, New Hampshire, United States</strong></li>
@@ -50,7 +50,7 @@
 <h2>1. Scope and summary</h2>
 <p>This Privacy Policy explains how RouteBraid handles personal information when you use the RouteBraid application and RouteBraid-operated account, synchronization, profile, collaboration, support, and subscription-access features (the &quot;Service&quot;). It does not govern a third-party app, website, map provider, identity provider, app store, or payment service acting under its own privacy policy.</p>
 <p>RouteBraid is local-first. Core itinerary planning and local JSON backup can be used without an account. Local trip data stays on your device unless you deliberately use a network feature such as map tiles, place search, routing, Google Maps link import, an external map handoff, cloud synchronization, collaboration, profile-photo upload, support, or subscription access.</p>
-<p>RouteBraid does not sell personal information, does not share it for cross-context behavioral advertising, and does not use personal information to train an artificial-intelligence model. If RouteBraid introduces materially different data practices, this Policy and any legally required disclosures or choices will be updated before those practices apply.</p>
+<p>RouteBraid does not use personal information to train an artificial-intelligence model. Ad-supported Android builds can use Google AdMob as described below. RouteBraid does not provide your trip content, precise device location, account identifier, or search queries to AdMob for targeting. If RouteBraid introduces materially different data practices, this Policy and any legally required disclosures or choices will be updated before those practices apply.</p>
 <h2>2. Information you provide or create</h2>
 <ul>
 <li><strong>Trips and itinerary content:</strong> trip names, destinations, dates, time zones, lodging, saved places, addresses, coordinates, order, visit duration, reservations, notes, manual travel details, and planning preferences.</li>
@@ -63,7 +63,7 @@
 <p>Please avoid entering passport numbers, payment-card numbers, authentication secrets, health information, another person's private home location, or other sensitive information that is unnecessary for travel planning.</p>
 <h2>3. Location, camera, photos, maps, search, and routing</h2>
 <ul>
-<li><strong>Device location:</strong> RouteBraid asks for foreground location permission only after you use the map's location control. It reads a current high-accuracy position and, while that map remains open, may receive foreground updates to move the on-screen marker. The reading is held in app memory for that map session. Merely centering the map does not upload the GPS reading to RouteBraid's Supabase backend. If you later save, synchronize, share, route from, or open a map around that position, coordinates or map-area information can be sent as described below.</li>
+<li><strong>Device location:</strong> RouteBraid asks for foreground location permission only after you use the map's location control. It reads a current high-accuracy position and, while that map remains open, may receive foreground updates to move the on-screen marker. The reading is held in app memory for that map session. Merely centering the map does not upload the GPS reading to RouteBraid's cloud backend. If you later save, synchronize, share, route from, or open a map around that position, coordinates or map-area information can be sent as described below.</li>
 <li><strong>Map tiles:</strong> displaying the map requests visible tile coordinates from OpenStreetMap Foundation infrastructure. The provider can receive the requested tile area and standard network information such as IP address, device or browser information, user agent, and request time.</li>
 <li><strong>Place search:</strong> when you press Search, RouteBraid sends the search text and any city context to the OpenStreetMap Foundation's public Nominatim service. Do not put personal or confidential information in a search query.</li>
 <li><strong>Route and matrix requests:</strong> for supported walking or driving calculations, RouteBraid can send itinerary coordinates and the selected travel mode to the FOSSGIS routing service at routing.openstreetmap.de. FOSSGIS states that route requests are stored in server logs. RouteBraid can fall back to an on-device straight-line estimate if routing is unavailable.</li>
@@ -76,6 +76,11 @@
 <p>If RevenueCat or a supported app store is configured, RouteBraid processes a private RouteBraid account identifier together with subscription product identifiers, entitlement status, purchase and restore status, store, environment, renewal state, and expiration information needed to provide Pro access. RevenueCat and the applicable store process purchase receipts and related transaction data.</p>
 <p>Google Play or Apple handles your payment method and full payment-card details; RouteBraid does not receive those card details. Store and RevenueCat records can persist under their legal, tax, fraud-prevention, and transaction-retention obligations. Deleting your RouteBraid cloud account does not cancel a store subscription.</p>
 <h2>5. Technical and network information</h2>
+<p>### Advertising in the free Android version</p>
+<p>When advertising is enabled, free users may see clearly labeled Google AdMob banners on trip-browsing screens. Pro includes an ad-free experience. RouteBraid waits for its subscription check before requesting an ad; if that check cannot determine eligibility, it does not request ads. Browser and iOS versions do not currently request AdMob ads.</p>
+<p>AdMob can process IP address (including an approximate location inferred from it), device or advertising identifiers, ad interactions, and app/SDK diagnostic information for ad delivery, reporting, reliability, and fraud prevention. RouteBraid requests non-personalized ads. Such ads can still use identifiers for frequency limits and aggregated reporting; non-personalized does not mean no data processing. Google handles this information under its own privacy policy at <a href="https://policies.google.com/privacy" rel="noopener noreferrer">https://policies.google.com/privacy</a> and partner information at <a href="https://policies.google.com/technologies/partner-sites." rel="noopener noreferrer">https://policies.google.com/technologies/partner-sites.</a></p>
+<p>Before initializing ads, RouteBraid uses Google's User Messaging Platform to check whether a privacy message or choice is required. Where the platform requires an ongoing entry point, <strong>Settings → Ad privacy choices</strong> lets you review or change your choices. If the consent platform does not permit ad requests, no ads are requested. Choosing Pro stops RouteBraid's ad requests; it does not erase records already processed by Google. Device advertising controls are also available in Android settings.</p>
+<p>The current production Android build enables live AdMob banners for eligible free users. Development builds can use Google's test inventory, which does not generate ad revenue.</p>
 <p>When you use an online feature, RouteBraid and its providers can automatically process IP address, request time, endpoint, response status, app or SDK version, device and operating-system type, user agent, authentication and session metadata, and limited security or rate-limit events. Test builds can enable more detailed SDK logs on the device. This information is used for authentication, delivery, reliability, debugging, abuse prevention, security, and legal compliance.</p>
 <p>RouteBraid does not intentionally collect contacts, call or SMS history, microphone recordings, background location, or browsing history outside links and provider pages you deliberately open through the Service.</p>
 <h2>6. How information is used</h2>
@@ -84,6 +89,7 @@
 <li>create and maintain local itineraries and requested backups, imports, exports, maps, routes, and estimates;</li>
 <li>authenticate accounts and provide profiles, manual synchronization, collaboration, and account deletion;</li>
 <li>identify the correct account for Pro entitlement checks, purchases, and restoration;</li>
+<li>deliver and measure non-personalized ads in eligible free Android builds, subject to the applicable privacy choices;</li>
 <li>display shared-trip information to authorized members and maintain invitation, role, block, report, revision, conflict, and activity controls;</li>
 <li>respond to support, privacy, safety, security, and legal requests;</li>
 <li>prevent fraud, abuse, unauthorized access, excessive provider use, and violations of the Terms;</li>
@@ -103,8 +109,9 @@
 <h2>8. When information leaves your device</h2>
 <p>Local trip content leaves your device only when you initiate or enable a feature that requires it. Depending on that action, information may be disclosed to:</p>
 <ul>
-<li><strong>Supabase:</strong> authentication, private database records, row-level access controls, cloud synchronization, private profile-photo storage, collaboration, and account deletion;</li>
-<li><strong>Google:</strong> Google sign-in if chosen, Google Play billing on Android, Google Maps link resolution, and Google Maps handoff;</li>
+<li><strong>Firebase:</strong> authentication, private Firestore profiles, and manual cloud synchronization in the current Android app;</li>
+<li><strong>Supabase:</strong> legacy account, synchronization, collaboration, and profile-photo records retained during migration and reconciliation; the current Android Firebase build does not use Supabase for sign-in or sync;</li>
+<li><strong>Google:</strong> Google sign-in if chosen, Google Play billing on Android, Google Maps link resolution, Google Maps handoff, and AdMob/consent services when ads are enabled as described above;</li>
 <li><strong>Apple:</strong> Apple sign-in if offered and chosen, App Store billing on Apple platforms, and Apple Maps handoff;</li>
 <li><strong>RevenueCat:</strong> subscription offerings, receipts, customer identifiers, purchase status, and Pro entitlement synchronization;</li>
 <li><strong>OpenStreetMap Foundation:</strong> visible map-tile requests and user-initiated Nominatim search queries;</li>
@@ -140,12 +147,12 @@
 <li>revoke app permissions in device settings;</li>
 <li>leave a shared trip, remove members as an owner, and use available block or report controls;</li>
 <li>sign out without deleting local trips; and</li>
-<li>delete the cloud account in <strong>Settings &gt; Cloud Account &gt; Delete Account</strong>. This removes the active account and associated RouteBraid cloud data but leaves local trips on the device and does not cancel a Google Play or App Store subscription.</li>
+<li>request cloud account deletion in <strong>Settings &gt; Cloud Account &gt; Request account deletion</strong>. Send the prefilled email to submit the request. After verifying account control, RouteBraid removes the Firebase account and associated RouteBraid-controlled cloud data, and reconciles retained legacy and archived records. Local trips remain on the device, and a Google Play or App Store subscription is not cancelled.</li>
 </ul>
 <p>You can also email <strong>RouteBraid@gmail.com</strong> to request access, correction, deletion, restriction, portability, objection, or other rights available under the law where you live. RouteBraid may need to verify your identity and clarify the scope before fulfilling a request. Some information may be retained where law permits or requires it. If RouteBraid denies a request, you may email the same address with the subject <strong>Privacy Appeal</strong> and explain why you believe the decision should be reconsidered. You may also complain to the privacy or data-protection authority where you live.</p>
 <p>Disconnecting Google or Apple at the provider does not necessarily delete the RouteBraid cloud account. Uninstalling the app does not cancel a subscription. Manage billing through the applicable store.</p>
 <h2>13. Security</h2>
-<p>RouteBraid uses safeguards appropriate to the type of information handled, including encrypted network transport, authenticated sessions, private storage paths, row-level database authorization, narrow server functions, data minimization, local image re-encoding, request limits, and account-deletion controls. Access to a shared trip is role-based and tied to authenticated accounts.</p>
+<p>RouteBraid uses safeguards appropriate to the type of information handled, including encrypted network transport, authenticated sessions, private storage paths, owner-scoped Firestore rules, data minimization, local image re-encoding, request limits, and account-deletion request controls. Legacy collaboration access is role-based and tied to authenticated accounts.</p>
 <p>No app, device, network, or storage system is perfectly secure. Keep your device and sign-in account protected, install updates, review collaborators, and do not place unnecessary secrets in a trip. Notify <strong>RouteBraid@gmail.com</strong> if you suspect unauthorized access or a security issue.</p>
 <h2>14. Children</h2>
 <p>RouteBraid is not directed to children under 13, and RouteBraid does not knowingly collect personal information online from a child under 13. If you believe a child under 13 has provided personal information, contact <strong>RouteBraid@gmail.com</strong> so RouteBraid can investigate and delete it as appropriate. Users between 13 and the age of legal majority must have permission from a parent or legal guardian.</p>
