@@ -42,7 +42,7 @@
         <h1>RouteBraid Privacy Policy</h1>
 <ul>
 <li>Effective date: <strong>August 20, 2026</strong></li>
-<li>Last updated: <strong>October 21, 2026</strong></li>
+<li>Last updated: <strong>October 23, 2026</strong></li>
 <li>Developer and data controller: <strong>RouteBraid</strong></li>
 <li>Privacy contact: <strong>RouteBraid@gmail.com</strong></li>
 <li>Location: <strong>Lebanon, New Hampshire, United States</strong></li>
@@ -65,7 +65,7 @@
 <ul>
 <li><strong>Device location:</strong> RouteBraid asks for foreground location permission only after you use the map's location control. It reads a current high-accuracy position and, while that map remains open, may receive foreground updates to move the on-screen marker. The reading is held in app memory for that map session. Merely centering the map does not upload the GPS reading to RouteBraid's cloud backend. If you later save, synchronize, share, route from, or open a map around that position, coordinates or map-area information can be sent as described below.</li>
 <li><strong>Map tiles:</strong> displaying the map requests visible tile coordinates from OpenStreetMap Foundation infrastructure. The provider can receive the requested tile area and standard network information such as IP address, device or browser information, user agent, and request time.</li>
-<li><strong>Place search:</strong> when you press Search, RouteBraid sends the search text and any city context to the OpenStreetMap Foundation's public Nominatim service. Do not put personal or confidential information in a search query.</li>
+<li><strong>Place search:</strong> when you press Search, RouteBraid sends the search text to Komoot's public Photon service, which searches OpenStreetMap data. The trip destination may be sent separately to find a city coordinate, which is then sent with the place query to prefer nearby matches. Do not put personal or confidential information in a search query.</li>
 <li><strong>Route and matrix requests:</strong> for supported walking or driving calculations, RouteBraid can send itinerary coordinates and the selected travel mode to the FOSSGIS routing service at routing.openstreetmap.de. FOSSGIS states that route requests are stored in server logs. RouteBraid can fall back to an on-device straight-line estimate if routing is unavailable.</li>
 <li><strong>Google Maps link import:</strong> when you ask RouteBraid to resolve a shared Google Maps link or list, the link, list identifier, and ordinary connection data may be sent directly to Google. RouteBraid extracts place information exposed by the link; it does not access your private Google Maps account or saved lists unless the shared link itself makes the requested information available.</li>
 <li><strong>External map handoff:</strong> when you choose Google Maps or Apple Maps, RouteBraid opens a provider URL containing the relevant labels, places, coordinates, route points, and travel mode. The selected provider then handles that information under its own policy.</li>
@@ -114,14 +114,15 @@
 <li><strong>Google:</strong> Google sign-in if chosen, Google Play billing on Android, Google Maps link resolution, Google Maps handoff, and AdMob/consent services when ads are enabled as described above;</li>
 <li><strong>Apple:</strong> Apple sign-in if offered and chosen, App Store billing on Apple platforms, and Apple Maps handoff;</li>
 <li><strong>RevenueCat:</strong> subscription offerings, receipts, customer identifiers, purchase status, and Pro entitlement synchronization;</li>
-<li><strong>OpenStreetMap Foundation:</strong> visible map-tile requests and user-initiated Nominatim search queries;</li>
+<li><strong>OpenStreetMap Foundation:</strong> visible map-tile requests;</li>
+<li><strong>Komoot (Photon):</strong> user-initiated place queries, destination lookups, and search focus coordinates;</li>
 <li><strong>FOSSGIS:</strong> coordinates and travel mode for user-requested route and route-matrix calculations;</li>
 <li><strong>collaborators you authorize:</strong> profile display name and shared-trip content appropriate to the invitation and role;</li>
 <li><strong>apps or people you choose:</strong> content sent through copy, share, export, backup, invitation, or external-map controls;</li>
 <li><strong>professional advisers, authorities, or other parties:</strong> when reasonably necessary to comply with law, respond to valid process, protect safety and rights, investigate abuse, or establish or defend legal claims; and</li>
 <li><strong>a successor organization:</strong> in a merger, acquisition, financing, reorganization, or transfer of the Service, subject to this Policy and applicable notice or consent requirements.</li>
 </ul>
-<p>RouteBraid selects service providers for limited operational purposes and expects processors acting on RouteBraid's instructions to use appropriate confidentiality, security, and data-protection safeguards. Google, Apple, the OpenStreetMap Foundation, FOSSGIS, and other services can also act as independent controllers under their own terms and policies. RouteBraid does not control their independent processing.</p>
+<p>RouteBraid selects service providers for limited operational purposes and expects processors acting on RouteBraid's instructions to use appropriate confidentiality, security, and data-protection safeguards. Google, Apple, the OpenStreetMap Foundation, Komoot, FOSSGIS, and other services can also act as independent controllers under their own terms and policies. RouteBraid does not control their independent processing.</p>
 <h2>9. International processing</h2>
 <p>RouteBraid operates from the United States. Service providers and their infrastructure can process information in the United States, Canada, the United Kingdom, the European Economic Area, Singapore, or other countries where they or their subprocessors operate. Those countries may have different privacy laws.</p>
 <p>Where required, RouteBraid will rely on an approved transfer mechanism or another lawful basis for an international transfer. You may contact RouteBraid for available information about safeguards relevant to your request.</p>
